@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookeo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+ 
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+      </div>
+      <div class="dropdown">
+        <div class="input-group mb-3">
+          <button
+            class="btn btn-outline-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Menus
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Education</a></li>
+            <li><a class="dropdown-item" href="#">Fiction</a></li>
+            <li><a class="dropdown-item" href="#">Children's books</a></li>
+            <li><a class="dropdown-item" href="#">Science</a></li>
+            <li><a class="dropdown-item" href="#">Religion</a></li>
+            <li><a class="dropdown-item" href="#">Sports</a></li>
+            <li><a class="dropdown-item" href="#">Art</a></li>
+          </ul>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Text input with dropdown button"
+            placeholder="Search"
+            required
+          />
+          <button class="btn btn-outline-secondary" type="button">
+            <img class="searchlogo" src="./img/layer1.png" />
+          </button>
+        </div>
+      </div>
+      <div class="loginsignup">
+       <a href="./checkout/checkout.html"> <button class="login">Log In</button></a>
+        <button class="signup">
+          <img src="./img/signup_logo.png" alt="signup" />
+          Sign Up
+        </button>
+      </div>
+    </header>
+    <main >
+      <div class="w-full py-5 px-16">
+
+ <section class="flex">
+        <div class="main-gallery w-3/4 rounded-2xl">
+          <div class="main-gallery-cell rounded-2xl py-16 px-16">
+            <p class="purple font-bold mb-4">BACK TO SCHOOL</p>
+            <h1 class="text-5xl font-bold mb-7">Special 50% Off</h1>
+            <p class="text-3xl mb-7">for our student community</p>
+            <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            <div class="my-10 flex items-center">
+              <a id="getthedeal" class="mr-4 transition-all hover:bg-indigo-500 flex w-44 justify-between back-purple text-white rounded-3xl py-4"
+                href="#">
+                Get the deal
+                <img src="./img/right-arrow.png" alt="arrow-right" />
+              </a>
+              <a class="border border-gray-600 transition-all hover:bg-gray-300 p-4 rounded-3xl" href="#">See other
+                promos</a>
+            </div>
+          </div>
+          <div class="main-gallery-cell rounded-2xl py-16 px-16">
+            <p class="purple font-bold mb-4">BACK TO SCHOOL</p>
+            <h1 class="text-5xl font-bold mb-7">Special 70% Off</h1>
+            <p class="text-3xl mb-7">for our student community</p>
+            <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            <div class="my-10 flex items-center">
+              <a id="getthedeal" class="mr-4 transition-all hover:bg-indigo-500 flex w-44 justify-between back-purple text-white rounded-3xl py-4 px-5"
+                href="#">
+                Get the deal
+                <img src="./img/right-arrow.png" alt="arrow-right" />
+              </a>
+              <a class="border border-gray-600 transition-all hover:bg-gray-300 p-4 rounded-3xl" href="#">See other
+                promos</a>
+            </div>
+          </div>
+          <div class="main-gallery-cell rounded-2xl py-16 px-16">
+            <p class="purple font-bold mb-4">BACK TO SCHOOL</p>
+            <h1 class="text-5xl font-bold mb-7">Special 80% Off</h1>
+            <p class="text-3xl mb-7">for our student community</p>
+            <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            <div class="my-10 flex items-center">
+              <a id="getthedeal" class="mr-4 transition-all hover:bg-indigo-500 flex w-44 justify-between back-purple text-white rounded-3xl py-4 px-5"
+                href="#">
+                Get the deal
+                <img src="./img/right-arrow.png" alt="arrow-right" />
+              </a>
+              <a class="border border-gray-600 transition-all hover:bg-gray-300 p-4 rounded-3xl" href="#">See other
+                promos</a>
+            </div>
+          </div>
+          <div class="main-gallery-cell rounded-2xl py-16 px-16">
+            <p class="purple font-bold mb-4">BACK TO SCHOOL</p>
+            <h1 class="text-5xl font-bold mb-7">Special 90% Off</h1>
+            <p class="text-3xl mb-7">for our student community</p>
+            <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            <div class="my-10 flex items-center">
+              <a id="getthedeal" class="mr-4 transition-all hover:bg-indigo-500 flex w-44 justify-between back-purple text-white rounded-3xl py-4 px-5"
+                href="#">
+                Get the deal
+                <img src="./img/right-arrow.png" alt="arrow-right" />
+              </a>
+              <a class="border border-gray-600 transition-all hover:bg-gray-300 p-4 rounded-3xl" href="#">See other
+                promos</a>
+            </div>
+          </div>
+        </div>
+  
+  
+        <div class="w-1/4 a">
+          <!-- Slider main container -->
+          <div class="swiper best-seller bg-gray-400 mx-4 rounded-2xl h-full ">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h3 class="text-white font-bold text-3xl text-center mt-12 mb-6">BEST SELLER</h3>
+                <p class="text-white text-center">Based sales this week</p>
+                <div class="">
+                  <img class="" src="./img/books/1001656678502.png" alt="book-img" />
+                </div>
+                <p class="text-white font-bold text-center mb-4">Pushing Clouds</p>
+                <p class="text-gray-300 text-sm text-center mb-3">ADVANTURE, SCIENCE, COMEDY</p>
+                <div class="font-bold bg-white w-44 rounded-xl mx-auto flex justify-center py-2">
+                  <p class="text-gray-300 mr-4 line-through">60.00</p>
+                  <p>USD 45.25</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="text-white font-bold text-3xl text-center mt-12 mb-6">BEST SELLER</h3>
+                <p class="text-white text-center">Based sales this week</p>
+                <div class="">
+                  <img class="" src="./img/books/1001651662833.png" alt="book-img" />
+                </div>
+                <p class="text-white font-bold text-center mb-4">next book</p>
+                <p class="text-gray-300 text-sm text-center mb-3">ADVANTURE, SCIENCE, COMEDY</p>
+                <div class="font-bold bg-white w-44 rounded-xl mx-auto flex justify-center py-2">
+                  <p class="text-gray-300 mr-4 line-through">60.00</p>
+                  <p>USD 45.25</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="text-white font-bold text-3xl text-center mt-12 mb-6">BEST SELLER</h3>
+                <p class="text-white text-center">Based sales this week</p>
+                <div class="">
+                  <img class="" src="./img/books/1001656317756.png" alt="book-img" />
+                </div>
+                <p class="text-white font-bold text-center mb-4">another book</p>
+                <p class="text-gray-300 text-sm text-center mb-3">ADVANTURE, SCIENCE, COMEDY</p>
+                <div class="font-bold bg-white w-44 rounded-xl mx-auto flex justify-center py-2">
+                  <p class="text-gray-300 mr-4 line-through">60.00</p>
+                  <p>USD 45.25</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="text-white font-bold text-3xl text-center mt-12 mb-6">BEST SELLER</h3>
+                <p class="text-white text-center">Based sales this week</p>
+                <div class="">
+                  <img class="" src="./img/books/9780135462409.png" alt="book-img" />
+                </div>
+                <p class="text-white font-bold text-center mb-4">windows internal</p>
+                <p class="text-gray-300 text-sm text-center mb-3">ADVANTURE, SCIENCE, COMEDY</p>
+                <div class="font-bold bg-white w-44 rounded-xl mx-auto flex justify-center py-2">
+                  <p class="text-gray-300 mr-4 line-through">60.00</p>
+                  <p>USD 45.25</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <h3 class="text-white font-bold text-3xl text-center mt-12 mb-6">BEST SELLER</h3>
+                <p class="text-white text-center">Based sales this week</p>
+                <div class="">
+                  <img class="" src="./img/books/9780136819387.png" alt="book-img" />
+                </div>
+                <p class="text-white font-bold text-center mb-4">the best book</p>
+                <p class="text-gray-300 text-sm text-center mb-3">ADVANTURE, SCIENCE, COMEDY</p>
+                <div class="font-bold bg-white w-44 rounded-xl mx-auto flex justify-center py-2">
+                  <p class="text-gray-300 mr-4 line-through">60.00</p>
+                  <p>USD 45.25</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="swiper-button-next text-white bg-gray-200 rounded-md"></div>
+            <div class="swiper-button-prev text-white bg-gray-200 rounded-md"></div>
+          </div>
+        </div>
+  
+      </section>
+
+      </div>
+     
+
+      <section class="py-5 px-16 flex h-96  ">
+        <div class="recomended w-1/2 h-full p-6 rounded-md mr-2">
+          <h3 class="font-bold text-xl mb-2">Recomended For You</h3>
+          <p class="text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.</p>
+          <div class="swiper recomended-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/1001651662833.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/1001656317756.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/1001656678502.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/9780135462409.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/9780136789239.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/9780136819387.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/9780137380350.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/9780137564279.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/9780137613663.png"
+                  alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+          </div>
+          </div>
+    
+    
+        <div class="popular w-1/2 h-full p-6 rounded-md">
+          <h3 class="font-bold text-xl mb-2">Popular in 2020</h3>
+          <p class="text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.</p>
+          <div class="swiper popular-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/1001651662833.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/1001656317756.png"
+                  alt="zor kitabdi brat oxumaga deyer" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/1001656678502.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/9780135462409.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/9780136789239.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/9780136819387.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/9780137380350.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/9780137564279.png"
+                  alt="" />
+              </div>
+              <div class="swiper-slide w-2/3 h-2/3">
+                <img class="w-full h-full" src="./img/books/9780137613663.png"
+                  alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+    
+
+
+     <div class="select">
+      <div class="selectitems">
+        <div>
+          <img src="./img/energy (2) 1.png" alt="energy" />
+        </div>
+        <div>
+          <div>
+            <p><strong>Quick delivery </strong></p>
+
+          </div>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
+          inventore nemo modi!
+        </p>
+        </div>
+       
+      </div>
+    
+        <div class="selectitems">
+
+             <div>
+              <img src="./img/approve 1.png" alt="approve" />
+          </div>
+        <div>
+          <p><strong>Secure Payment</strong>
+            </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
+            aspernatur adipisci dolorem.
+          </p>
+        </div>
+        </div>
+
+        <div class="selectitems">
+        
+          <div>
+              <img src="./img/thumb-up 1.png" alt="thumbup" />
+          </div>
+          <div>
+             <p><strong>Best Quality</strong> </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            dolorem delectus quisquam.
+          </p>
+          </div>
+         
+        </div>
+
+        <div class="selectitems">
+          <div>
+             <img src="./img/star (1) 1.png" />
+          </div>
+    
+          <div>
+            <p><strong>Guarantee</strong> </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            dolorem a magnam.
+          </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+       <!-- <div class='recpop'>
+        <div class="recommend"> 
+          <h2>Recomended For You</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, aperiam.</p>
+         
+         <div class="imgbtn">
+          <div class="imgs">
+            <img class="imgbook" src="./img/get-product-image.jfif" alt="">
+            <img class="imgbook" src="./img/get-product-image.jfif" alt="">
+            <img class="imgbook" src="./img/get-product-image.jfif" alt="">
+            <img class="imgbook" src="./img/get-product-image.jfif" alt="">
+              </div>
+               <div class="btndiv">
+                           <button class="btnright2"><img src="./img/right-chevron (1) 1.png" alt=""/></button>
+
+            </div>
+        
+         </div> 
+        </div>
+        <div class="popular">
+          <h2>Popular in 2020</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, aperiam.</p>
+          <div class="imgbtn">
+             <div class="imgs">
+            <img class='imgbook' src="./img/get-product-image.jfif" alt="">
+            <img class="imgbook"src="./img/get-product-image.jfif" alt="">
+            <img class="imgbook" src="./img/get-product-image.jfif" alt="">
+            <img class="imgbook" src="./img/get-product-image.jfif" alt=""> 
+          </div>
+            <div class="btndiv">
+              <button class="btnright2"><img src="./img/right-chevron (1) 1.png" alt=""/></button>
+
+           
+          </div>
+          </div>
+         
+        </div>
+       </div> -->
+
+<!-- 
+       <div>
+        <div>
+          <h2>Special Offers</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div>
+          <div class="seconds">
+            <img class='seconds1img' src="./img/get-product-image.jfif" alt="">
+            <div>
+               <h6>SECONDS [Part I]</h6>
+               <div class="p3p">
+                  <p class="pb">BIOGRAPHY</p>
+               <p class="pt">THRILLER</p>
+               <p class="ph">HORROR</p>
+               </div>
+             
+               <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+            <p><strong>Kevin Smiley</strong></p>
+            <div>
+            <button>
+              <img src='#' alt="">
+               Add to cart
+            </button>
+
+
+
+            </div>
+            </div>
+          </div>
+        </div>
+       </div> -->
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="bookoe">
+        <div>
+           <img src="./img/logo.png" alt="">
+        </div>
+        <div class="bookoep">
+          <p>Bookoe is a Book Store Website lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+
+        </div>
+                  <div>
+            <h6 class="follow">Follow Us</h6>
+          
+              <div class="socialmedia">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          
+          </div>
+
+
+      </div>
+      <div class="bookscateg">
+        <div class="h6">  <h6>Books Categories</h6></div>
+  
+    <div class="ulli">
+        <div class="ul_li_2">
+
+  <ul>
+      <li><a class="a" href="#">Action</a></li>
+      <li><a class="a" href="#">Adventure</a></li>
+      <li><a class="a" href="#">Comedy</a></li>
+      <li><a class="a" href="#">Crime</a></li>
+      <li><a class="a" href="#">Drama</a></li>
+      <li><a class="a" href="#">Fantasy</a></li>
+      <li><a class="a" href="#">Horror</a></li>
+ </ul>
+
+    </div>
+<div class="ul_li_23">
+  <ul>
+    <li><a class="a" href="#">Law</a></li>
+    <li><a class="a" href="#">Mystery</a></li>
+    <li><a class="a" href="#">Professional</a></li>
+    <li><a class="a" href="#">Romance</a></li>
+    <li><a class="a" href="#">TV Series</a></li>
+    <li><a class="a" href="#">View More</a></li>
+ 
+  </ul>
+</div>
+   
+
+
+    </div>
+  
+  
+
+ 
+      </div>
+      <div class="quicklinks">
+        <div class="h6"> <h6>
+          Quick Links
+        </h6></div>
+       
+        <ul>
+          <li><a class="a" href="#">About Us</a></li>
+          <li><a class="a" href="#">Contact Us</a></li>
+          <li><a class="a" href="#">Products</a></li>
+          <li><a class="a" href="#">Login</a></li>
+          <li><a class="a" href="#">Sign Up</a></li>
+          <li><a class="a" href="#">FAQ</a></li>
+          <li><a class="a" href="#">Shipment</a></li>
+       
+        </ul>
+      </div>
+      <div class="ourstore">
+        <div class="h6">
+            <h6>Our Store</h6>
+        </div>
+      <div class="ourstoreimg">
+                <img src="./img/ourstore_vertical_cmyk-01.png" alt="">
+
+      </div>
+           <div class="imgp">
+            <div>
+                          <img src="./img/map-marker 1.png" alt="">
+
+            </div>
+            <p>832  Thompson Drive, San Fransisco
+              CA 94107, United States</p>
+           </div>
+           <div class="imgp">
+            <div>
+                          <img src="./img/fGroup.png" alt="">
+
+            </div>
+            <p>+123 345123 556</p>
+           </div>
+           <div class="imgp">
+            <div>
+                          <img src="./img/f2.png" alt="">
+
+            </div>
+            <p>support@bookoe.id</p>
+           </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+ 
+
+    <script src="./script.js"></script>
+  </body>
+</html>
